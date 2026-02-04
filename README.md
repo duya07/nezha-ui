@@ -50,93 +50,18 @@
 
 ###### 隐藏迷你概览条 
 ```html
+/* 隐藏迷你概览条 */
 <script>
   window.MiniStatsConfig = {
     hideMiniStats: true,       // true: 开启隐藏迷你概览条
     hideParentSection: true    // true: 连同外框一起隐藏 (防止留下一条空白间距)
   };
 </script>
-
-<script>
-(function() {
-    'use strict';
-    
-    // 目标选择器：匹配你发的 HTML 代码中的那个 div class
-    const TARGET_SELECTOR = '.server-info .mb-2.flex.flex-wrap.items-center.gap-4';
-
-    const observer = new MutationObserver(() => {
-        const cfg = window.MiniStatsConfig || { hideMiniStats: true, hideParentSection: true };
-        
-        if (!cfg.hideMiniStats) return;
-
-        const targetEl = document.querySelector(TARGET_SELECTOR);
-        
-        if (targetEl) {
-            // 如果配置为隐藏父级section (推荐)，则隐藏 section
-            if (cfg.hideParentSection) {
-                const parentSection = targetEl.closest('section');
-                if (parentSection) {
-                    parentSection.style.display = 'none';
-                } else {
-                    targetEl.style.display = 'none';
-                }
-            } else {
-                // 否则只隐藏里面的内容
-                targetEl.style.display = 'none';
-            }
-        }
-    });
-
-    const root = document.querySelector('#root') || document.body;
-    if (root) {
-        observer.observe(root, { childList: true, subtree: true });
-    }
-})();
-</script>
+<script src="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/mini-stats-hide.js"></script>
 ```
 
 ###### 迷你概览条增加半透明背景
 ```html
-<script>
-(function () {
-  'use strict';
-
-  const TARGET_SELECTOR = '.server-info .mb-2.flex.flex-wrap.items-center.gap-4';
-
-  function styleMiniStats() {
-    const targetEl = document.querySelector(TARGET_SELECTOR);
-    if (!targetEl || targetEl.dataset.miniStatsStyled === 'true') return;
-
-    // 半透明背景 + 毛玻璃 + 阴影（与哪吒其他卡片一致）
-    targetEl.classList.add(
-      'bg-card/70',
-      'backdrop-blur-md',
-      'shadow-lg',
-      'dark:shadow-none',
-      'border',
-      'border-white/10'
-    );
-
-    // 更圆润
-    targetEl.style.borderRadius = '18px';
-
-    // 更舒服的内边距
-    targetEl.style.padding = '12px 20px';
-
-    // 调整间距
-    targetEl.classList.remove('mb-2');
-    targetEl.classList.add('mb-3');
-
-    targetEl.dataset.miniStatsStyled = 'true';
-  }
-
-  const observer = new MutationObserver(styleMiniStats);
-  const root = document.querySelector('#root') || document.body;
-
-  if (root) {
-    observer.observe(root, { childList: true, subtree: true, attributes: true });
-    styleMiniStats();
-  }
-})();
-</script>
+/* 迷你概览条增加半透明背景 */
+<script src="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/mini-stats-style.js"></script>
 ```
