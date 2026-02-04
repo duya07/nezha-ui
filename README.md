@@ -39,7 +39,7 @@
 <script src="https://cdn.jsdelivr.net/gh/ziwiwiz/nezha-ui@main/netstatus-autoshow.js"></script>
 ```
 
-###### 哪吒详情页直接展示网络波动卡片(网络卡片在上) 
+###### 哪吒详情页直接展示网络波动卡片 (网络卡片在上) 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/netstatus-autoshow-2.js"></script>
 ```
