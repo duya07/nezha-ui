@@ -4,7 +4,7 @@
 ```html
 <meta name="referrer" content="no-referrer">
 /* 自用的css格式 */
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ziwiwiz/nezha-ui@main/nezha-style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/nezha-style.css">
 /* 自用的探针修改 */
 <script>
     window.CustomBackgroundImage = "https://bing.img.run/rand_uhd.php"; /* 页面背景图 */
@@ -30,20 +30,20 @@
     enableLog: false           // 开启日志
   };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/ziwiwiz/nezha-ui@main/traffic-progress.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/traffic-progress.js"></script>
 ```
 
 ###### 哪吒详情页直接展示网络波动卡片 
 ```html
 /* 源自https://www.nodeseek.com/post-349102-1 */
-<script src="https://cdn.jsdelivr.net/gh/ziwiwiz/nezha-ui@main/netstatus-autoshow.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/netstatus-autoshow.js"></script>
 ```
 ###### 仪表板的自定义代码 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ziwiwiz/nezha-ui@main/nezha-dashboard.css">
-<script src="https://cdn.jsdelivr.net/gh/ziwiwiz/nezha-ui@main/nezha-dashboard.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/nezha-dashboard.css">
+<script src="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/nezha-dashboard.js"></script>
 ```
 ###### 页面时间修改 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ziwiwiz/nezha-ui@main/nezha-time.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/nezha-time.css">
 ```
