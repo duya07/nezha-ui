@@ -57,11 +57,11 @@
     hideParentSection: true    // true: 连同外框一起隐藏 (防止留下一条空白间距)
   };
 </script>
-<script src="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/mini-stats-hide.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/nezha-mini-stats-hide.js"></script>
 ```
 
 ###### 迷你概览条增加半透明背景
 ```html
 /* 迷你概览条半透明背景 */
-<script src="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/mini-stats-style.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/duya07/nezha-ui@main/nezha-mini-stats-style.js"></script>
 ```
